@@ -1,4 +1,5 @@
 
+//curseur personnalisé
 const trailer = document.getElementById("trailer");
 
 const animateTrailer = (e, interacting) => {
