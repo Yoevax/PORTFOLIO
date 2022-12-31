@@ -1,0 +1,436 @@
+@font-face {
+    font-family: "rl-unno";
+    src: url("../assets/font/RL-Unno-Trial.otf");
+}
+
+
+body{
+
+   
+    font-family: "Inter";
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+     color: white;
+}
+p, h2{
+    font-family: "Inter";
+
+}
+#about{
+    background-color: whitesmoke;
+    color: black;
+}
+
+#deesse{
+    width:90%;
+    position: absolute; 
+    left: 40%; 
+    top: 50px;
+     
+}
+@media (max-width:992px) {
+    #deesse{
+    left: 0%; 
+    top: 20%;
+    }
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 168);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.scroll-down{
+    width: fit-content;
+    margin: 0 auto;
+    /* padding: 7rem 0; */
+}
+
+
+.scroll-arrow{
+    position: relative;
+    left: 65px;
+    bottom: 3px;
+}
+
+.scroll-circle{
+    animation: scroll-animation 7s linear infinite;
+}
+
+
+@keyframes scroll-animation {
+    100% { 
+      transform: rotate(-360deg);
+    }
+}
+h1{
+    font-family: "Inter";
+}
+#logo{
+    font-family: "rl-unno";
+}
+#homepage, .navbar{
+    background-color: black;
+    
+}#homepage{
+    height: 100vh;
+}
+#msgD{
+    font-size: calc(8rem + 1vw);
+    font-weight: 400;
+    color: white;
+}
+@media (min-width: 1200px) {
+    #msgD {
+        font-size: 14rem;
+  }
+}
+#frontEnd-title{
+    font-size: calc(5rem + 1vw);
+    font-weight: 400;
+    color: black;
+    background-color: yellow;
+}
+#desc{margin-left: -70px;}
+
+@media (max-width:992px) {
+    #desc{
+        margin-left: 0px;
+    }
+    video{
+        width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #frontEnd-title {
+        font-size: 14rem;
+  }
+}
+#mouse_cursor {
+    position: fixed;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    mix-blend-mode: difference;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: #024421;
+    overflow: hidden;
+    display: none;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  }
+#jsSkill:hover{
+    color: yellow;
+}
+#cssSkill:hover{
+    color: rgb(0, 98, 255);
+}
+#test:hover{
+    color: rgb(174, 43, 0);
+}
+#sassSkill:hover{
+    color: rgb(251, 100, 125);
+}
+#nodeSkill:hover{
+    color: rgb(105, 168, 11);
+}
+
+.jquery g:hover{
+    fill: rgb(9, 68, 170);
+}
+#jsonSkill g:hover{
+    fill: rgb(50, 50, 50);
+}
+#phpSkill:hover{
+    color: rgb(107, 107, 223);
+}
+
+#wordpressSkill:hover{
+    color: rgb(18, 100, 195);
+}
+
+#gitSkill:hover{
+    color: rgb(39, 30, 11);
+}
+
+#githubSkill:hover{
+    color: rgb(72, 4, 132);
+}
+
+#bootstrapSkill:hover{
+    color: rgb(121, 31, 200);
+}
+#psSkill .photoshop:hover  {
+    fill: rgb(27, 45, 105);
+}
+#xdSkill .experiences:hover{
+    fill: rgb(182, 6, 179);
+}
+
+#illuSkill .illustrator:hover{
+    fill: rgb(237, 169, 58);
+}
+
+#animateSkill .animate:hover{
+    fill: rgb(237, 169, 58);
+}
+.mysql:hover{
+    fill: rgb(4, 52, 184);
+}
+
+i, svg{
+    cursor: pointer;
+
+}
+#skills{
+ transition:  0.7s;
+}
+hr{
+    color: white;
+}
+
+/* Texte défilant */
+.messagedefilant {
+    font-family: "Inter";
+    display: block;
+    margin: 40px auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+   
+  .messagedefilant div {
+    position: absolute;
+    min-width: 100%; /* au minimum la largeur du conteneur */
+  }
+   
+  .messagedefilant div span, 
+  .messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    /* font-size: 200px; */
+    white-space: nowrap;
+    top:0;
+  }
+   
+  .messagedefilant div span {
+    animation: defilement 20s infinite linear;
+
+  }
+   
+  .messagedefilant div:after {
+    position: absolute;
+    top:0; left:0;
+    content:attr(data-text);
+    animation: defilement2 20s infinite linear;
+    background: #edc;
+  }
+   
+  @keyframes defilement {
+    0% { margin-left: 0; }
+    100% { margin-left: -100%; }
+  }
+   
+  @keyframes defilement2 {
+    0% { margin-left: 100%; }
+    100% { margin-left: 0%; }
+  }
+
+/* main qui se touchent */
+
+@media screen and (max-width: 991px){
+    .section-michelangelo {
+        height: 50em;
+    }
+} 
+
+ .section-michelangelo {   
+    position: relative;
+    overflow: visible;
+    height: 30em;
+}
+
+@media screen and (max-width: 991px){
+    .left-hand {
+        height: 40vw;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: 100% 50%;
+        object-position: 100% 50%;
+    }
+}
+.left-hand {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: 0%;
+    z-index: 2;
+    width: 50vw;
+    /* height: 100%; */
+    max-width: none;
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%); */
+    -o-object-fit: fill;
+    object-fit: fill;
+    -o-object-position: 100% 50%;
+    object-position: 100% 50%;
+}
+
+@media screen and (max-width: 991px){
+    .right-hand {
+        height: 40vw;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: 0% 50%;
+        object-position: 0% 50%;
+        /* right: 40%; */
+    }
+}
+
+.right-hand {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 2;
+    width: 50vw;
+    /* height: 100%; */
+    max-width: none;
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%); */
+    -o-object-fit: fill;
+    object-fit: fill;
+    -o-object-position: 0% 50%;
+    object-position: 0% 50%;
+}
+
+@media screen and (max-width: 767px){
+    .animation-center {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .animation-center {
+        height: 40em;
+    }
+}
+.animation-center {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40vw;
+    height: 30em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.lottie-animation-3.is-flipped {
+    position: absolute;
+    left: -11%;
+    top: -8%;
+    right: 0%;
+    bottom: 0%;
+    width: auto;
+    height: auto;
+}
+
+.lottie-animation-3 {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: 49%;
+    z-index: 3;
+    width: 40vw;
+    height: auto;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 767px){
+    .button {
+        font-size: 0.6rem;
+        top: -20%;
+    }
+    #reach {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 991px){
+    .button {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 1.33em;
+        
+    }
+}
+.button {
+    position: relative;
+    bottom: 0px;
+    z-index: 99;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 22.22em;
+    height: 3.33em;
+    margin: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 0.2em;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    color: #000;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.w-button {
+    
+    padding: 9px 15px;
+   background-color: rgb(0 0 0 / 8%);
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+    text-align: center;
+} 
+#reach{
+    border: 1px solid #e1d0d0;
+}
