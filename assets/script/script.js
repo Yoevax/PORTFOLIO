@@ -1,22 +1,22 @@
 
 //curseur personnalisé
-const trailer = document.getElementById("trailer");
+const curseur = document.getElementById("curseur");
 
-const animateTrailer = (e, interacting) => {
-  const x = e.clientX - trailer.offsetWidth / 2,
-        y = e.clientY - trailer.offsetHeight / 2;
+const animateCurseur = (e, interacting) => {
+  const x = e.clientX - curseur.offsetWidth / 2,
+        y = e.clientY - curseur.offsetHeight / 2;
   
   const keyframes = {
     transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`
   }
   
-  trailer.animate(keyframes, { 
+  curseur.animate(keyframes, { 
     duration: 800, 
     fill: "forwards" 
   });
 }
 
-const getTrailerClass = type => {
+const getCurseurClass = type => {
   switch(type) {
     case "video":
       return "fa-solid fa-play";
@@ -29,13 +29,13 @@ window.onmousemove = e => {
   const interactable = e.target.closest(".interactable"),
         interacting = interactable !== null;
   
-  const icon = document.getElementById("trailer-icon");
+  const icon = document.getElementById("curseur-icon");
   
-  animateTrailer(e, interacting);
+  animateCurseur(e, interacting);
   
-  trailer.dataset.type = interacting ? interactable.dataset.type : "";
+  curseur.dataset.type = interacting ? interactable.dataset.type : "";
   
   if(interacting) {
-    icon.className = getTrailerClass(interactable.dataset.type);
+    icon.className = getCurseurClass(interactable.dataset.type);
   }
 }
