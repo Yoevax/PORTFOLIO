@@ -642,7 +642,16 @@ hr{
         width: 500px;
     }
 }
-
+.btn-links{
+    border: 0.5px solid rgb(255, 254, 254);
+    border-radius: 60px;
+    padding: 10px 30px 10px 30px;
+    margin: 0;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+/*  */
 /* Contact */
 #contactPartie{
     height: 100vh;
