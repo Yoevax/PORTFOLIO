@@ -499,12 +499,17 @@ hr{
     left: 40%; 
     top: -20px;
 }
-@media (max-width:992px) {
+
+
+@media(max-width:576px){
     #deesse{
         left: -30%;
         top: 158px;
         width: 220%;
     }
+
+}
+@media (max-width:992px) {
     body{
         overflow-x: hidden;
     }
